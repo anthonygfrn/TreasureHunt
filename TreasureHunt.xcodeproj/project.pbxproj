@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2FCAF232BD8D3F500D755DC /* TreasureHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF222BD8D3F500D755DC /* TreasureHuntApp.swift */; };
-		A2FCAF252BD8D3F500D755DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF242BD8D3F500D755DC /* ContentView.swift */; };
 		A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FCAF262BD8D3F700D755DC /* Assets.xcassets */; };
 		A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FCAF292BD8D3F700D755DC /* Preview Assets.xcassets */; };
 		A2FCAF342BD8D3F800D755DC /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF332BD8D3F800D755DC /* TreasureHuntTests.swift */; };
 		A2FCAF3E2BD8D3F800D755DC /* TreasureHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF3D2BD8D3F800D755DC /* TreasureHuntUITests.swift */; };
 		A2FCAF402BD8D3F800D755DC /* TreasureHuntUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF3F2BD8D3F800D755DC /* TreasureHuntUITestsLaunchTests.swift */; };
+		A2FCAFCD2BDB0A0E00D755DC /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFCC2BDB0A0E00D755DC /* MapPage.swift */; };
+		A2FCAFCF2BDB0A3900D755DC /* CoconutTreePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFCE2BDB0A3900D755DC /* CoconutTreePage.swift */; };
+		A2FCAFD12BDB0A6D00D755DC /* CavePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFD02BDB0A6D00D755DC /* CavePage.swift */; };
+		A2FCAFD32BDB0A8900D755DC /* MagicShellPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFD22BDB0A8900D755DC /* MagicShellPage.swift */; };
+		A2FCAFD52BDB0AA500D755DC /* AllPuzzlesCompletedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFD42BDB0AA500D755DC /* AllPuzzlesCompletedPage.swift */; };
+		A2FCAFD72BDB0ABF00D755DC /* FinalIslandPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFD62BDB0ABF00D755DC /* FinalIslandPage.swift */; };
+		A2FCAFD92BDB0AE200D755DC /* TreasureOpenedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFD82BDB0AE200D755DC /* TreasureOpenedPage.swift */; };
+		A2FCAFDB2BDB0B1B00D755DC /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */; };
+		A2FCAFDD2BDB0BED00D755DC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDC2BDB0BED00D755DC /* SwiftUIView.swift */; };
+		A2FCAFDF2BDB0DAA00D755DC /* TreasurehuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */; };
+		A2FCAFE12BDB13AE00D755DC /* TreasureHuntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +44,6 @@
 
 /* Begin PBXFileReference section */
 		A2FCAF1F2BD8D3F500D755DC /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2FCAF222BD8D3F500D755DC /* TreasureHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntApp.swift; sourceTree = "<group>"; };
-		A2FCAF242BD8D3F500D755DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2FCAF262BD8D3F700D755DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2FCAF292BD8D3F700D755DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A2FCAF2F2BD8D3F800D755DC /* TreasureHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,17 @@
 		A2FCAF392BD8D3F800D755DC /* TreasureHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FCAF3D2BD8D3F800D755DC /* TreasureHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITests.swift; sourceTree = "<group>"; };
 		A2FCAF3F2BD8D3F800D755DC /* TreasureHuntUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2FCAFCC2BDB0A0E00D755DC /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
+		A2FCAFCE2BDB0A3900D755DC /* CoconutTreePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoconutTreePage.swift; sourceTree = "<group>"; };
+		A2FCAFD02BDB0A6D00D755DC /* CavePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CavePage.swift; sourceTree = "<group>"; };
+		A2FCAFD22BDB0A8900D755DC /* MagicShellPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicShellPage.swift; sourceTree = "<group>"; };
+		A2FCAFD42BDB0AA500D755DC /* AllPuzzlesCompletedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPuzzlesCompletedPage.swift; sourceTree = "<group>"; };
+		A2FCAFD62BDB0ABF00D755DC /* FinalIslandPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalIslandPage.swift; sourceTree = "<group>"; };
+		A2FCAFD82BDB0AE200D755DC /* TreasureOpenedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureOpenedPage.swift; sourceTree = "<group>"; };
+		A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		A2FCAFDC2BDB0BED00D755DC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurehuntApp.swift; sourceTree = "<group>"; };
+		A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +112,17 @@
 		A2FCAF212BD8D3F500D755DC /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
-				A2FCAF222BD8D3F500D755DC /* TreasureHuntApp.swift */,
-				A2FCAF242BD8D3F500D755DC /* ContentView.swift */,
+				A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */,
+				A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */,
+				A2FCAFCC2BDB0A0E00D755DC /* MapPage.swift */,
+				A2FCAFCE2BDB0A3900D755DC /* CoconutTreePage.swift */,
+				A2FCAFD02BDB0A6D00D755DC /* CavePage.swift */,
+				A2FCAFD22BDB0A8900D755DC /* MagicShellPage.swift */,
+				A2FCAFD42BDB0AA500D755DC /* AllPuzzlesCompletedPage.swift */,
+				A2FCAFD62BDB0ABF00D755DC /* FinalIslandPage.swift */,
+				A2FCAFD82BDB0AE200D755DC /* TreasureOpenedPage.swift */,
+				A2FCAFDC2BDB0BED00D755DC /* SwiftUIView.swift */,
+				A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */,
 				A2FCAF262BD8D3F700D755DC /* Assets.xcassets */,
 				A2FCAF282BD8D3F700D755DC /* Preview Content */,
 			);
@@ -257,8 +284,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2FCAF252BD8D3F500D755DC /* ContentView.swift in Sources */,
-				A2FCAF232BD8D3F500D755DC /* TreasureHuntApp.swift in Sources */,
+				A2FCAFCF2BDB0A3900D755DC /* CoconutTreePage.swift in Sources */,
+				A2FCAFD12BDB0A6D00D755DC /* CavePage.swift in Sources */,
+				A2FCAFE12BDB13AE00D755DC /* TreasureHuntView.swift in Sources */,
+				A2FCAFD52BDB0AA500D755DC /* AllPuzzlesCompletedPage.swift in Sources */,
+				A2FCAFCD2BDB0A0E00D755DC /* MapPage.swift in Sources */,
+				A2FCAFDD2BDB0BED00D755DC /* SwiftUIView.swift in Sources */,
+				A2FCAFD32BDB0A8900D755DC /* MagicShellPage.swift in Sources */,
+				A2FCAFD92BDB0AE200D755DC /* TreasureOpenedPage.swift in Sources */,
+				A2FCAFD72BDB0ABF00D755DC /* FinalIslandPage.swift in Sources */,
+				A2FCAFDF2BDB0DAA00D755DC /* TreasurehuntApp.swift in Sources */,
+				A2FCAFDB2BDB0B1B00D755DC /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

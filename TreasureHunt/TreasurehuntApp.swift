@@ -1,8 +1,8 @@
 //
-//  TreasureHuntApp.swift
+//  TreasurehuntApp.swift
 //  TreasureHunt
 //
-//  Created by Anthony on 24/04/24.
+//  Created by Anthony on 26/04/24.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct TreasureHuntApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TreasureHuntView()
         }
     }
 }
