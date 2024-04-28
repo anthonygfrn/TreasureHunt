@@ -93,9 +93,9 @@ struct MapPage: View {
                         .font(.system(size: 140))
                         .foregroundColor(.red)
                         .padding()
-                        .opacity(1)
+                        .opacity(0)
                 }
-                .position(x: 200, y: 100)
+                .position(x: 760, y: 100)
             }
             .padding()
             Image("character")
