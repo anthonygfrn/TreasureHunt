@@ -20,7 +20,6 @@
 		A2FCAFD72BDB0ABF00D755DC /* FinalIslandPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFD62BDB0ABF00D755DC /* FinalIslandPage.swift */; };
 		A2FCAFD92BDB0AE200D755DC /* TreasureOpenedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFD82BDB0AE200D755DC /* TreasureOpenedPage.swift */; };
 		A2FCAFDB2BDB0B1B00D755DC /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */; };
-		A2FCAFDD2BDB0BED00D755DC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDC2BDB0BED00D755DC /* SwiftUIView.swift */; };
 		A2FCAFDF2BDB0DAA00D755DC /* TreasurehuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */; };
 		A2FCAFE12BDB13AE00D755DC /* TreasureHuntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */; };
 		F5FBE4C62BDE4F65007291A4 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4C52BDE4F65007291A4 /* DiamondView.swift */; };
@@ -63,7 +62,6 @@
 		A2FCAFD62BDB0ABF00D755DC /* FinalIslandPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalIslandPage.swift; sourceTree = "<group>"; };
 		A2FCAFD82BDB0AE200D755DC /* TreasureOpenedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureOpenedPage.swift; sourceTree = "<group>"; };
 		A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
-		A2FCAFDC2BDB0BED00D755DC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurehuntApp.swift; sourceTree = "<group>"; };
 		A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntView.swift; sourceTree = "<group>"; };
 		F5FBE4C52BDE4F65007291A4 /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
@@ -309,7 +307,6 @@
 				A2FCAFE12BDB13AE00D755DC /* TreasureHuntView.swift in Sources */,
 				A2FCAFD52BDB0AA500D755DC /* AllPuzzlesCompletedPage.swift in Sources */,
 				A2FCAFCD2BDB0A0E00D755DC /* MapPage.swift in Sources */,
-				A2FCAFDD2BDB0BED00D755DC /* SwiftUIView.swift in Sources */,
 				A2FCAFD32BDB0A8900D755DC /* MagicShellPage.swift in Sources */,
 				F5FBE4C62BDE4F65007291A4 /* DiamondView.swift in Sources */,
 				F5FBE4CD2BDE6620007291A4 /* UnhappyFaceView.swift in Sources */,
@@ -482,7 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TreasureHunt/Preview Content\"";
-				DEVELOPMENT_TEAM = FTP77G36XW;
+				DEVELOPMENT_TEAM = S6Z46Q6KJT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -511,7 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TreasureHunt/Preview Content\"";
-				DEVELOPMENT_TEAM = FTP77G36XW;
+				DEVELOPMENT_TEAM = S6Z46Q6KJT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

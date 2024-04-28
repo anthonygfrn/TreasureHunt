@@ -105,6 +105,7 @@ struct MapPage: View {
                 .position(x: posX, y:posY)
                 .animation(.easeInOut(duration: 1), value: isAnimating)
         }
+        .navigationBarBackButtonHidden(true)
         NavigationLink(destination: FinalIslandPage(), isActive: $navigateToFinal) {
             EmptyView()
         }
