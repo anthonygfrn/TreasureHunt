@@ -44,7 +44,7 @@ struct LandingPage: View {
             }
         }
         .background(
-            NavigationLink(destination: MapPage(), isActive: $navigateToMap) {
+            NavigationLink(destination: MapPage(posX: 230.0, posY: 1090.0), isActive: $navigateToMap) {
                 EmptyView() // Placeholder, navigation link is hidden
             }
             .buttonStyle(PlainButtonStyle()) // Use PlainButtonStyle to make the NavigationLink invisible
