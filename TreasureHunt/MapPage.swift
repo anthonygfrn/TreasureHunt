@@ -93,9 +93,9 @@ struct MapPage: View {
                         .font(.system(size: 140))
                         .foregroundColor(.red)
                         .padding()
-                        .opacity(0)
+                        .opacity(1)
                 }
-                .position(x: 760, y: 100)
+                .position(x: 200, y: 100)
             }
             .padding()
             Image("character")
@@ -105,6 +105,7 @@ struct MapPage: View {
                 .position(x: posX, y:posY)
                 .animation(.easeInOut(duration: 1), value: isAnimating)
         }
+        .navigationBarBackButtonHidden(true)
         NavigationLink(destination: FinalIslandPage(), isActive: $navigateToFinal) {
             EmptyView()
         }
