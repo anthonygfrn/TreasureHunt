@@ -49,6 +49,7 @@ struct LandingPage: View {
             }
             .buttonStyle(PlainButtonStyle()) // Use PlainButtonStyle to make the NavigationLink invisible
         )
+        .navigationBarBackButtonHidden(true)
     }
 }
 
