@@ -117,6 +117,7 @@ struct MapPage: View {
         NavigationLink(destination: CoconutTreePage(), isActive: $navigateToCoconut) {
             EmptyView()
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
