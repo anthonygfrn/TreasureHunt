@@ -98,7 +98,7 @@ struct MapPage: View {
                 .position(x: 760, y: 100)
             }
             .padding()
-            Image("character")
+            Image("characterFull")
                 .resizable()
                 .frame(width: 300.0, height: 300.0)
                 .scaledToFit()
