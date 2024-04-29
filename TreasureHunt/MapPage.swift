@@ -31,7 +31,7 @@ struct MapPage: View {
                         self.isAnimating = true
                         self.posX = 800
                         self.posY = 200
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                             self.isAnimating = false
                             self.navigateToFinal = true
                         }
