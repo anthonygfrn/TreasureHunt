@@ -122,8 +122,6 @@
 			children = (
 				BEF93A8D2BDF6E6A001F4CB1 /* backgroundMusic.mp3 */,
 				A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */,
-				F5FBE4C72BDE5DB8007291A4 /* Components */,
-				BEF93A8A2BDF5719001F4CB1 /* View */,
 				A2FCAF262BD8D3F700D755DC /* Assets.xcassets */,
 				A2FCAF282BD8D3F700D755DC /* Preview Content */,
 			);
@@ -288,7 +286,6 @@
 			files = (
 				A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */,
 				A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */,
-				BEF93A8E2BDF6E6A001F4CB1 /* backgroundMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
