@@ -14,7 +14,6 @@ struct TreasureHuntView: View {
                 LandingPage()
         }
         .onAppear {
-                 // Start playing background audio
                  AudioManager.shared.playBackgroundMusic()
              }
     }

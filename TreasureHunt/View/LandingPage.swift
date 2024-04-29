@@ -48,6 +48,9 @@ struct LandingPage: View {
                 EmptyView() // Placeholder, navigation link is hidden
             }
             .buttonStyle(PlainButtonStyle()) // Use PlainButtonStyle to make the NavigationLink invisible
+            .onAppear {
+                    AudioManager.shared.playBackgroundMusic()
+            }
         )
         .navigationBarBackButtonHidden(true)
     }

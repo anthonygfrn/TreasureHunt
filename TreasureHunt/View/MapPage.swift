@@ -119,6 +119,9 @@ struct MapPage: View {
             EmptyView()
         }
         .navigationBarBackButtonHidden(true)
+        .onAppear {
+                 AudioManager.shared.playBackgroundMusic()
+             }
     }
 }
 
