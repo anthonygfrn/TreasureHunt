@@ -50,7 +50,7 @@ struct CoconutTreePage: View {
                     }
                 }
             
-            Image("bushCoconut")
+            Image("Grass")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 300)
