@@ -27,6 +27,7 @@
 		F5FBE4C92BDE5DE3007291A4 /* HappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4C82BDE5DE3007291A4 /* HappyFaceView.swift */; };
 		F5FBE4CB2BDE6536007291A4 /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4CA2BDE6536007291A4 /* FishView.swift */; };
 		F5FBE4CD2BDE6620007291A4 /* UnhappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4CC2BDE6620007291A4 /* UnhappyFaceView.swift */; };
+		F5FBE4CF2BDE9036007291A4 /* BrightnessAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4CE2BDE9036007291A4 /* BrightnessAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		F5FBE4C82BDE5DE3007291A4 /* HappyFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyFaceView.swift; sourceTree = "<group>"; };
 		F5FBE4CA2BDE6536007291A4 /* FishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
 		F5FBE4CC2BDE6620007291A4 /* UnhappyFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnhappyFaceView.swift; sourceTree = "<group>"; };
+		F5FBE4CE2BDE9036007291A4 /* BrightnessAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */,
 				A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */,
 				A2FCAFCC2BDB0A0E00D755DC /* MapPage.swift */,
+				F5FBE4CE2BDE9036007291A4 /* BrightnessAnimationView.swift */,
 				A2FCAFCE2BDB0A3900D755DC /* CoconutTreePage.swift */,
 				A2FCAFD02BDB0A6D00D755DC /* CavePage.swift */,
 				A2FCAFD22BDB0A8900D755DC /* MagicShellPage.swift */,
@@ -307,6 +310,7 @@
 			files = (
 				A2FCAFCF2BDB0A3900D755DC /* CoconutTreePage.swift in Sources */,
 				A2FCAFD12BDB0A6D00D755DC /* CavePage.swift in Sources */,
+				F5FBE4CF2BDE9036007291A4 /* BrightnessAnimationView.swift in Sources */,
 				A2FCAFE12BDB13AE00D755DC /* TreasureHuntView.swift in Sources */,
 				A2FCAFD52BDB0AA500D755DC /* AllPuzzlesCompletedPage.swift in Sources */,
 				A2FCAFCD2BDB0A0E00D755DC /* MapPage.swift in Sources */,
