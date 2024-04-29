@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A25F1E852BDF425F0062D26B /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A25F1E842BDF425F0062D26B /* backgroundMusic.mp3 */; };
 		A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FCAF262BD8D3F700D755DC /* Assets.xcassets */; };
 		A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FCAF292BD8D3F700D755DC /* Preview Assets.xcassets */; };
 		A2FCAF342BD8D3F800D755DC /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF332BD8D3F800D755DC /* TreasureHuntTests.swift */; };
@@ -48,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A25F1E842BDF425F0062D26B /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backgroundMusic.mp3; path = ../../../Downloads/backgroundMusic.mp3; sourceTree = "<group>"; };
 		A2FCAF1F2BD8D3F500D755DC /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FCAF262BD8D3F700D755DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2FCAF292BD8D3F700D755DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				F5FBE4C52BDE4F65007291A4 /* DiamondView.swift */,
 				F5FBE4CA2BDE6536007291A4 /* FishView.swift */,
 				A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */,
-				A25F1E842BDF425F0062D26B /* backgroundMusic.mp3 */,
 				A2FCAF262BD8D3F700D755DC /* Assets.xcassets */,
 				A2FCAF282BD8D3F700D755DC /* Preview Content */,
 			);
@@ -283,7 +280,6 @@
 			files = (
 				A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */,
 				A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */,
-				A25F1E852BDF425F0062D26B /* backgroundMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
