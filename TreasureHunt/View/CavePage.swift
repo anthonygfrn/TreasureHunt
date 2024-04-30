@@ -20,6 +20,8 @@ struct CavePage: View {
     @State private var glowWidth3 = 0.0
     @State private var posX = 840
     @State private var posY = 1000
+    @State private var fireSize = 230.0
+    @State private var firePosY = 1000.0
     
     var body: some View {
         ZStack {
@@ -95,8 +97,8 @@ struct CavePage: View {
             Image("fire")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 230)
-                .position(CGPoint(x: 840, y: 1000))
+                .frame(width: fireSize)
+                .position(CGPoint(x: 840, y: firePosY))
             
             Image("tinderBox")
                 .resizable()
@@ -126,6 +128,8 @@ struct CavePage: View {
                 posY = 800
                 glowWidth3 = 1240
                 brightnessIlumination = 1
+                fireSize = 280
+                firePosY = 970
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                     backOpacity = 1
                 }

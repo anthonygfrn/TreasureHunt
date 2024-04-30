@@ -15,3 +15,7 @@ struct TreasureHuntApp: App {
         }
     }
 }
+
+#Preview{
+    TreasureHuntView()
+}

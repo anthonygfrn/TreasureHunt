@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FinalIslandPage: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var answerImage1 = "X"
     @State private var answerImage2 = "X"
     @State private var answerImage3 = "X"
@@ -22,6 +23,15 @@ struct FinalIslandPage: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea(.all)
+            
+            Image("backButton")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+                .position(CGPoint(x: 900, y: 100))
+                .onTapGesture {
+                    dismiss()
+                }
             
             Image("upButton")
                 .resizable()

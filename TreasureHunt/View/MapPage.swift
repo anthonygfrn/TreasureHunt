@@ -14,6 +14,9 @@ struct MapPage: View {
     @State private var navigateToCave = false
     @State private var navigateToShell = false
     @State private var navigateToFinal = false
+    @State private var hint1 = "questionMark"
+    @State private var hint2 = "questionMark"
+    @State private var hint3 = "questionMark"
     
     @State var posX: Double
     @State var posY: Double
@@ -53,6 +56,9 @@ struct MapPage: View {
                         self.isAnimating = false
                         self.navigateToShell = true
                     }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.7) {
+                        hint3 = "plainCircle"
+                    }
                 }) {
                     Image(systemName: "mappin")
                         .font(.system(size: 140))
@@ -71,6 +77,9 @@ struct MapPage: View {
                         self.isAnimating = false
                         self.navigateToCave = true
                     }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.7) {
+                        hint2 = "plainSquare"
+                    }
                 }) {
                     Image(systemName: "mappin")
                         .font(.system(size: 140))
@@ -88,6 +97,9 @@ struct MapPage: View {
                         self.isAnimating = false
                         self.navigateToCoconut = true
                     }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.7) {
+                        hint1 = "plainTriangle"
+                    }
                 }) {
                     Image(systemName: "mappin")
                         .font(.system(size: 140))
@@ -104,6 +116,44 @@ struct MapPage: View {
                 .scaledToFit()
                 .position(x: posX, y:posY)
                 .animation(.easeInOut(duration: 1), value: isAnimating)
+            
+            HStack {
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint1)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint2)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint3)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+            }
+            .position(CGPoint(x: 220, y: 80))
+            
         }
         .navigationBarBackButtonHidden(true)
 
@@ -121,6 +171,9 @@ struct MapPage: View {
         
         .navigationDestination(isPresented: $navigateToCoconut) {
             CoconutTreePage()
+        }
+        .onAppear(){
+            UIScreen.main.brightness = 0.5
         }
         .navigationBarBackButtonHidden(true)
         .onAppear {
