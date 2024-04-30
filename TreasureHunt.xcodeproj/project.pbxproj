@@ -15,7 +15,6 @@
 		A2FCAF3E2BD8D3F800D755DC /* TreasureHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF3D2BD8D3F800D755DC /* TreasureHuntUITests.swift */; };
 		A2FCAF402BD8D3F800D755DC /* TreasureHuntUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF3F2BD8D3F800D755DC /* TreasureHuntUITestsLaunchTests.swift */; };
 		A2FCAFDF2BDB0DAA00D755DC /* TreasurehuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */; };
-		BE217EB32BE0897800AFA4D8 /* AllPuzzlesCompletedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217E9F2BE0897800AFA4D8 /* AllPuzzlesCompletedPage.swift */; };
 		BE217EB42BE0897800AFA4D8 /* CavePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EA02BE0897800AFA4D8 /* CavePage.swift */; };
 		BE217EB52BE0897800AFA4D8 /* CoconutTreePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EA12BE0897800AFA4D8 /* CoconutTreePage.swift */; };
 		BE217EB62BE0897800AFA4D8 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EA22BE0897800AFA4D8 /* DiamondView.swift */; };
@@ -31,6 +30,9 @@
 		BE217EC02BE0897800AFA4D8 /* HappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EAD2BE0897800AFA4D8 /* HappyFaceView.swift */; };
 		BE217EC12BE0897800AFA4D8 /* UnhappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EAE2BE0897800AFA4D8 /* UnhappyFaceView.swift */; };
 		BE217EC32BE0897800AFA4D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE217EB12BE0897800AFA4D8 /* Preview Assets.xcassets */; };
+		BEF5913D2BE09F2A0007B974 /* coconutDropEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF5913A2BE09F2A0007B974 /* coconutDropEffect.mp3 */; };
+		BEF5913E2BE09F2A0007B974 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF5913B2BE09F2A0007B974 /* success.mp3 */; };
+		BEF5913F2BE09F2A0007B974 /* sparkleEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF5913C2BE09F2A0007B974 /* sparkleEffect.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +64,6 @@
 		A2FCAF3D2BD8D3F800D755DC /* TreasureHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITests.swift; sourceTree = "<group>"; };
 		A2FCAF3F2BD8D3F800D755DC /* TreasureHuntUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurehuntApp.swift; sourceTree = "<group>"; };
-		BE217E9F2BE0897800AFA4D8 /* AllPuzzlesCompletedPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPuzzlesCompletedPage.swift; sourceTree = "<group>"; };
 		BE217EA02BE0897800AFA4D8 /* CavePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CavePage.swift; sourceTree = "<group>"; };
 		BE217EA12BE0897800AFA4D8 /* CoconutTreePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoconutTreePage.swift; sourceTree = "<group>"; };
 		BE217EA22BE0897800AFA4D8 /* DiamondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
@@ -78,6 +79,9 @@
 		BE217EAD2BE0897800AFA4D8 /* HappyFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyFaceView.swift; sourceTree = "<group>"; };
 		BE217EAE2BE0897800AFA4D8 /* UnhappyFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnhappyFaceView.swift; sourceTree = "<group>"; };
 		BE217EB12BE0897800AFA4D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEF5913A2BE09F2A0007B974 /* coconutDropEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coconutDropEffect.mp3; sourceTree = "<group>"; };
+		BEF5913B2BE09F2A0007B974 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		BEF5913C2BE09F2A0007B974 /* sparkleEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sparkleEffect.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,9 @@
 		A2FCAF212BD8D3F500D755DC /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
+				BEF5913A2BE09F2A0007B974 /* coconutDropEffect.mp3 */,
+				BEF5913C2BE09F2A0007B974 /* sparkleEffect.mp3 */,
+				BEF5913B2BE09F2A0007B974 /* success.mp3 */,
 				BE217EAC2BE0897800AFA4D8 /* backgroundMusic.mp3 */,
 				BE217EAB2BE0897800AFA4D8 /* circle.mp3 */,
 				A25F1F3B2BDFC1BA0062D26B /* bzz.mp3 */,
@@ -170,7 +177,6 @@
 		BE217EAA2BE0897800AFA4D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BE217E9F2BE0897800AFA4D8 /* AllPuzzlesCompletedPage.swift */,
 				BE217EA02BE0897800AFA4D8 /* CavePage.swift */,
 				BE217EA12BE0897800AFA4D8 /* CoconutTreePage.swift */,
 				BE217EA22BE0897800AFA4D8 /* DiamondView.swift */,
@@ -306,10 +312,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF5913D2BE09F2A0007B974 /* coconutDropEffect.mp3 in Resources */,
+				BEF5913E2BE09F2A0007B974 /* success.mp3 in Resources */,
 				A25F1F3C2BDFC1BA0062D26B /* bzz.mp3 in Resources */,
 				A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */,
 				BE217EC32BE0897800AFA4D8 /* Preview Assets.xcassets in Resources */,
 				BE217EBF2BE0897800AFA4D8 /* backgroundMusic.mp3 in Resources */,
+				BEF5913F2BE09F2A0007B974 /* sparkleEffect.mp3 in Resources */,
 				A25F1F442BE051350062D26B /* bzz2.mp3 in Resources */,
 				BE217EBE2BE0897800AFA4D8 /* circle.mp3 in Resources */,
 				A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */,
@@ -342,7 +351,6 @@
 				BE217EB72BE0897800AFA4D8 /* FinalIslandPage.swift in Sources */,
 				BE217EC12BE0897800AFA4D8 /* UnhappyFaceView.swift in Sources */,
 				BE217EBA2BE0897800AFA4D8 /* MagicShellPage.swift in Sources */,
-				BE217EB32BE0897800AFA4D8 /* AllPuzzlesCompletedPage.swift in Sources */,
 				BE217EBD2BE0897800AFA4D8 /* TreasureOpenedPage.swift in Sources */,
 				BE217EBB2BE0897800AFA4D8 /* MapPage.swift in Sources */,
 				BE217EBC2BE0897800AFA4D8 /* TreasureHuntView.swift in Sources */,
@@ -520,8 +528,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,8 +558,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

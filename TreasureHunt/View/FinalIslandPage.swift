@@ -15,7 +15,9 @@ struct FinalIslandPage: View {
     @State private var navigateToDiamond = false
     @State private var navigateToFish = false
     
-    private var listAns2 = ["X", "star", "square", "triangle", "circle"]
+    @State private var hint1 = "plainTriangle"
+    @State private var hint2 = "plainSquare"
+    @State private var hint3 = "plainCircle"
     
     var body: some View {
         ZStack {
@@ -23,6 +25,43 @@ struct FinalIslandPage: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea(.all)
+            
+            HStack {
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint1)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint2)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint3)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+            }
+            .position(CGPoint(x: 220, y: 80))
             
             Image("upButton")
                 .resizable()
@@ -185,7 +224,7 @@ struct FinalIslandPage: View {
         if answerImage1 == "triangle" &&
             answerImage2 == "square" &&
             answerImage3 == "circle"{
-            var random = Int.random(in: 1...2)
+            var random = Int.random(in: 1...1)
             if random == 1 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     navigateToDiamond.toggle()

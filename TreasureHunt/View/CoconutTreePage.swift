@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct CoconutTreePage: View {
     @Environment(\.dismiss) private var dismiss
@@ -17,6 +18,9 @@ struct CoconutTreePage: View {
     @State private var coconutHeight = 400
     @State private var placeholderImage = "questionMark"
     @State private var shakeOpacity = 1.0
+    
+    @State private var fallingSound: AVAudioPlayer?
+    @State private var successSound: AVAudioPlayer?
     
     var body: some View {
         ZStack {
@@ -40,6 +44,8 @@ struct CoconutTreePage: View {
                 .frame(width: 70, height: 70)
                 .position(CGPoint(x: 370, y: coconutHeight))
                 .onShake {
+//                    loadSounds()
+//                    playSound(fallingSound, volume: 30)
                     withAnimation(.linear(duration: 1)){
                         coconutHeight = 930
                         shakeOpacity = 0
@@ -104,6 +110,37 @@ struct CoconutTreePage: View {
                 rotation = 0
             }
         }
+    }
+    
+    func loadSounds() {
+        // Load sound files
+        fallingSound = loadSound(named: "coconutDropEffect")
+        successSound = loadSound(named: "sparkleEffect")
+    }
+
+    func loadSound(named name: String) -> AVAudioPlayer? {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
+            return nil
+        }
+        do {
+            return try AVAudioPlayer(contentsOf: url)
+        } catch {
+            print("Error loading sound \(name): \(error)")
+            return nil
+        }
+    }
+    
+    func playSound(_ sound: AVAudioPlayer?, volume: Float? = nil, loop: Bool = false) {
+        guard let sound = sound else {
+            return
+        }
+        sound.stop()
+        sound.currentTime = 0
+        sound.numberOfLoops = loop ? -1 : 0
+        if let volume = volume {
+            sound.volume = volume
+        }
+        sound.play()
     }
 }
 
