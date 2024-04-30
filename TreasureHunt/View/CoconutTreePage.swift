@@ -16,6 +16,7 @@ struct CoconutTreePage: View {
     @State private var isRotate = true
     @State private var coconutHeight = 400
     @State private var placeholderImage = "questionMark"
+    @State private var shakeOpacity = 1.0
     
     var body: some View {
         ZStack {
@@ -41,6 +42,7 @@ struct CoconutTreePage: View {
                 .onShake {
                     withAnimation(.linear(duration: 1)){
                         coconutHeight = 930
+                        shakeOpacity = 0
                     }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                         isRotate = false
@@ -61,6 +63,7 @@ struct CoconutTreePage: View {
                 .scaledToFit()
                 .frame(width: 75)
                 .position(CGPoint(x: posXRight, y: 700))
+                .opacity(shakeOpacity)
             
             Image("shakeIconLeft")
                 .resizable()
@@ -70,6 +73,7 @@ struct CoconutTreePage: View {
                 .onAppear(){
                     shakeAnimation()
                 }
+                .opacity(shakeOpacity)
             
             Image(placeholderImage)
                 .resizable()
