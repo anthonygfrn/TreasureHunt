@@ -185,6 +185,7 @@ struct FinalIslandPage: View {
         NavigationLink(destination: DiamondView(), isActive: $navigateToDiamond) {
             EmptyView()
         }
+        
         NavigationLink(destination: FishView(), isActive: $navigateToFish) {
             EmptyView()
         }
@@ -194,7 +195,7 @@ struct FinalIslandPage: View {
             answerImage2 == "square" &&
             answerImage3 == "circle"{
             var random = Int.random(in: 1...2)
-            if random == 1{
+            if random == 1 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     navigateToDiamond.toggle()
                 }
