@@ -11,14 +11,14 @@ import AVFoundation
 struct MagicShellPage: View {
     @State private var hintSound: AVAudioPlayer?
     @State private var buzzerSound: AVAudioPlayer?
-    @State private var isAnimating = false
     @State private var objectImage = "bzz"
     @State private var hintSoundCount = 0
     @Environment(\.dismiss) private var dismiss
     @State private var backOpacity = 0.0
     @State private var timer: Timer?
+    @State private var widthText = 500.0
 
-    let volumeCheckInterval = 1.25 // Adjust as needed
+    let volumeCheckInterval = 0.5 // Adjust as needed
     let hintSoundMaxCount = 2 // Maximum number of times to play the hint sound
 
     var body: some View {
@@ -43,10 +43,9 @@ struct MagicShellPage: View {
             VStack {
                 Image(objectImage)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 500, height: 500)
+                    .scaledToFit()
+                    .frame(width: widthText)
                     .offset(x: 120)
-                    .scaleEffect(isAnimating ? 1.5 : 1.0)
                     .onAppear() {
                         startAnimation()
                         loadSounds()
@@ -57,6 +56,7 @@ struct MagicShellPage: View {
         .onDisappear {
             stopAllAudio() // Stop all audio when view disappears
         }
+        .navigationBarBackButtonHidden(true)
     }
 
     func loadSounds() {
@@ -79,7 +79,7 @@ struct MagicShellPage: View {
 
     func startAnimation() {
         withAnimation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
-            isAnimating = true
+            widthText = 600
         }
     }
 
@@ -87,7 +87,7 @@ struct MagicShellPage: View {
             // Start a timer to periodically check volume
             timer = Timer.scheduledTimer(withTimeInterval: volumeCheckInterval, repeats: true) { _ in
                 let volume = getCurrentVolume()
-                if volume == 0.7 {
+                if volume >= 0.75 {
                     // Change object image
                     self.objectImage = "o"
                     // Stop buzzer sound
@@ -95,13 +95,8 @@ struct MagicShellPage: View {
                     // Play hint sound
                     self.playHintSound()
                     backOpacity = 1
-                } else if volume == 0.6 || volume == 0.8 {
-                    // Play buzzer sound with lower volume
-                    self.playSound(self.buzzerSound, volume: 4.0)
-                    // Play hint sound
-                    self.playHintSound()
                 } else {
-                    self.playSound(self.buzzerSound, volume: 8.0)
+                    self.playSound(self.buzzerSound, volume: 60.0)
                 }
             }
         }

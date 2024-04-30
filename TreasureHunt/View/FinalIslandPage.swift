@@ -24,15 +24,6 @@ struct FinalIslandPage: View {
                 .scaledToFill()
                 .ignoresSafeArea(.all)
             
-            Image("backButton")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-                .position(CGPoint(x: 900, y: 100))
-                .onTapGesture {
-                    dismiss()
-                }
-            
             Image("upButton")
                 .resizable()
                 .scaledToFit()
