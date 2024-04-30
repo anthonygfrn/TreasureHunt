@@ -156,22 +156,29 @@ struct MapPage: View {
             
         }
         .navigationBarBackButtonHidden(true)
-        NavigationLink(destination: FinalIslandPage(), isActive: $navigateToFinal) {
-            EmptyView()
+
+        .navigationDestination(isPresented: $navigateToFinal) {
+            FinalIslandPage()
         }
-        NavigationLink(destination: MagicShellPage(), isActive: $navigateToShell) {
-            EmptyView()
+        
+        .navigationDestination(isPresented: $navigateToShell) {
+            MagicShellPage()
         }
-        NavigationLink(destination: CavePage(), isActive: $navigateToCave) {
-            EmptyView()
+        
+        .navigationDestination(isPresented: $navigateToCave) {
+            CavePage()
         }
-        NavigationLink(destination: CoconutTreePage(), isActive: $navigateToCoconut) {
-            EmptyView()
+        
+        .navigationDestination(isPresented: $navigateToCoconut) {
+            CoconutTreePage()
         }
         .onAppear(){
             UIScreen.main.brightness = 0.5
         }
         .navigationBarBackButtonHidden(true)
+        .onAppear {
+                 AudioManager.shared.playBackgroundMusic()
+             }
     }
 }
 

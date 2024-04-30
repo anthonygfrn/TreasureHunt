@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A25F1F3C2BDFC1BA0062D26B /* bzz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A25F1F3B2BDFC1BA0062D26B /* bzz.mp3 */; };
+		A25F1F402BDFCACB0062D26B /* circle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A25F1F3F2BDFCACB0062D26B /* circle.mp3 */; };
+		A25F1F422BDFCAD30062D26B /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A25F1F412BDFCAD30062D26B /* backgroundMusic.mp3 */; };
+		A25F1F442BE051350062D26B /* bzz2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A25F1F432BE051350062D26B /* bzz2.mp3 */; };
 		A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FCAF262BD8D3F700D755DC /* Assets.xcassets */; };
 		A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FCAF292BD8D3F700D755DC /* Preview Assets.xcassets */; };
 		A2FCAF342BD8D3F800D755DC /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAF332BD8D3F800D755DC /* TreasureHuntTests.swift */; };
@@ -22,7 +26,6 @@
 		A2FCAFDB2BDB0B1B00D755DC /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */; };
 		A2FCAFDF2BDB0DAA00D755DC /* TreasurehuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */; };
 		A2FCAFE12BDB13AE00D755DC /* TreasureHuntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */; };
-		BEF93A8E2BDF6E6A001F4CB1 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF93A8D2BDF6E6A001F4CB1 /* backgroundMusic.mp3 */; };
 		F5FBE4C62BDE4F65007291A4 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4C52BDE4F65007291A4 /* DiamondView.swift */; };
 		F5FBE4C92BDE5DE3007291A4 /* HappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4C82BDE5DE3007291A4 /* HappyFaceView.swift */; };
 		F5FBE4CB2BDE6536007291A4 /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBE4CA2BDE6536007291A4 /* FishView.swift */; };
@@ -47,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A25F1F3B2BDFC1BA0062D26B /* bzz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bzz.mp3; sourceTree = "<group>"; };
+		A25F1F3F2BDFCACB0062D26B /* circle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = circle.mp3; path = ../../circle.mp3; sourceTree = "<group>"; };
+		A25F1F412BDFCAD30062D26B /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backgroundMusic.mp3; path = ../../backgroundMusic.mp3; sourceTree = "<group>"; };
+		A25F1F432BE051350062D26B /* bzz2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bzz2.mp3; sourceTree = "<group>"; };
 		A2FCAF1F2BD8D3F500D755DC /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FCAF262BD8D3F700D755DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2FCAF292BD8D3F700D755DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -65,7 +72,6 @@
 		A2FCAFDA2BDB0B1B00D755DC /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasurehuntApp.swift; sourceTree = "<group>"; };
 		A2FCAFE02BDB13AE00D755DC /* TreasureHuntView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntView.swift; sourceTree = "<group>"; };
-		BEF93A8D2BDF6E6A001F4CB1 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backgroundMusic.mp3; path = Sounds/backgroundMusic.mp3; sourceTree = "<group>"; };
 		F5FBE4C52BDE4F65007291A4 /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
 		F5FBE4C82BDE5DE3007291A4 /* HappyFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyFaceView.swift; sourceTree = "<group>"; };
 		F5FBE4CA2BDE6536007291A4 /* FishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
@@ -120,10 +126,11 @@
 		A2FCAF212BD8D3F500D755DC /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
-				BEF93A8D2BDF6E6A001F4CB1 /* backgroundMusic.mp3 */,
+				A25F1F3B2BDFC1BA0062D26B /* bzz.mp3 */,
+				A25F1F3F2BDFCACB0062D26B /* circle.mp3 */,
+				A25F1F412BDFCAD30062D26B /* backgroundMusic.mp3 */,
+				A25F1F432BE051350062D26B /* bzz2.mp3 */,
 				A2FCAFDE2BDB0DAA00D755DC /* TreasurehuntApp.swift */,
-				F5FBE4C72BDE5DB8007291A4 /* Components */,
-				BEF93A8A2BDF5719001F4CB1 /* View */,
 				A2FCAF262BD8D3F700D755DC /* Assets.xcassets */,
 				A2FCAF282BD8D3F700D755DC /* Preview Content */,
 			);
@@ -286,9 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25F1F3C2BDFC1BA0062D26B /* bzz.mp3 in Resources */,
 				A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */,
+				A25F1F442BE051350062D26B /* bzz2.mp3 in Resources */,
+				A25F1F402BDFCACB0062D26B /* circle.mp3 in Resources */,
+				A25F1F422BDFCAD30062D26B /* backgroundMusic.mp3 in Resources */,
 				A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */,
-				BEF93A8E2BDF6E6A001F4CB1 /* backgroundMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TreasureHunt/Preview Content\"";
-				DEVELOPMENT_TEAM = S6Z46Q6KJT;
+				DEVELOPMENT_TEAM = FTP77G36XW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -498,6 +508,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,7 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TreasureHunt/Preview Content\"";
-				DEVELOPMENT_TEAM = S6Z46Q6KJT;
+				DEVELOPMENT_TEAM = FTP77G36XW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -527,6 +538,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
