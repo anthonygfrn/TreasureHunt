@@ -30,7 +30,6 @@
 		BE217EBF2BE0897800AFA4D8 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE217EAC2BE0897800AFA4D8 /* backgroundMusic.mp3 */; };
 		BE217EC02BE0897800AFA4D8 /* HappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EAD2BE0897800AFA4D8 /* HappyFaceView.swift */; };
 		BE217EC12BE0897800AFA4D8 /* UnhappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EAE2BE0897800AFA4D8 /* UnhappyFaceView.swift */; };
-		BE217EC22BE0897800AFA4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE217EB02BE0897800AFA4D8 /* Assets.xcassets */; };
 		BE217EC32BE0897800AFA4D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE217EB12BE0897800AFA4D8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +77,6 @@
 		BE217EAC2BE0897800AFA4D8 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		BE217EAD2BE0897800AFA4D8 /* HappyFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyFaceView.swift; sourceTree = "<group>"; };
 		BE217EAE2BE0897800AFA4D8 /* UnhappyFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnhappyFaceView.swift; sourceTree = "<group>"; };
-		BE217EB02BE0897800AFA4D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE217EB12BE0897800AFA4D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +128,6 @@
 		A2FCAF212BD8D3F500D755DC /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
-				BE217EB02BE0897800AFA4D8 /* Assets.xcassets */,
 				BE217EAC2BE0897800AFA4D8 /* backgroundMusic.mp3 */,
 				BE217EAB2BE0897800AFA4D8 /* circle.mp3 */,
 				A25F1F3B2BDFC1BA0062D26B /* bzz.mp3 */,
@@ -315,7 +312,6 @@
 				BE217EBF2BE0897800AFA4D8 /* backgroundMusic.mp3 in Resources */,
 				A25F1F442BE051350062D26B /* bzz2.mp3 in Resources */,
 				BE217EBE2BE0897800AFA4D8 /* circle.mp3 in Resources */,
-				BE217EC22BE0897800AFA4D8 /* Assets.xcassets in Resources */,
 				A2FCAF272BD8D3F700D755DC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

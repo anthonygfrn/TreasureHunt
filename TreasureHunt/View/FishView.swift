@@ -75,9 +75,9 @@ struct FishView: View {
                     .padding([.bottom],900)
                 
                 // Redirect to landingPage
-                Image("nextButton")
+                Image("replay")
                     .resizable()
-                    .frame(width: 189, height: 131)
+                    .frame(width: 188, height: 188)
                     .padding(.bottom, 71)
                     .padding(.top, 1164)
                     .padding(.leading, 772)
@@ -87,9 +87,9 @@ struct FishView: View {
                     // Aksi ketika tombol ditekan, navigasi ke landingPage
                     self.navigateToLandingPage = true
                 }) {
-                    Image("nextButton")
+                    Image("replay")
                         .resizable()
-                        .frame(width: 189, height: 131)
+                        .frame(width: 188, height: 188)
                         .padding(.bottom, 71)
                         .padding(.top, 1164)
                         .padding(.leading, 772)

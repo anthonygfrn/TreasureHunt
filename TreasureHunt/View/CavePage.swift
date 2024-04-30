@@ -22,6 +22,7 @@ struct CavePage: View {
     @State private var posY = 1000
     @State private var fireSize = 230.0
     @State private var firePosY = 1000.0
+    @State private var freezingImage = "freezingSad"
     
     var body: some View {
         ZStack {
@@ -116,6 +117,13 @@ struct CavePage: View {
                     rotateAnimation()
                 }
                 .opacity(questionMarkOpacity)
+            
+            Image(freezingImage)
+                .resizable()
+                .frame(width: 416, height: 503, alignment: .center)
+                .padding(.top, 795)
+                .padding(.trailing, 543)
+            
         }
         .navigationBarBackButtonHidden(true)
     }
@@ -132,6 +140,8 @@ struct CavePage: View {
                 firePosY = 970
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                     backOpacity = 1
+                    
+                    freezingImage = "freezingHappy"
                 }
             }
         }
