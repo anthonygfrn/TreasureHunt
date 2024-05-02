@@ -22,6 +22,10 @@ struct CoconutTreePage: View {
     @State private var fallingSound: AVAudioPlayer?
     @State private var successSound: AVAudioPlayer?
     
+    @State private var hint1 = "questionMark"
+    @State private var hint2 = "questionMark"
+    @State private var hint3 = "questionMark"
+    
     var body: some View {
         ZStack {
             Image("coconutMapPuzzle")
@@ -32,7 +36,7 @@ struct CoconutTreePage: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)
-                .position(CGPoint(x: 900, y: 100))
+                .position(CGPoint(x: 850, y: 125))
                 .opacity(backOpacity)
                 .onTapGesture {
                     dismiss()
@@ -56,6 +60,7 @@ struct CoconutTreePage: View {
                         rotateAnimation()
                         backOpacity = 1
                         playSound(successSound , volume: 100)
+                        hint1 = "plainTriangle"
                     }
                 }
             
@@ -91,6 +96,43 @@ struct CoconutTreePage: View {
                 .onAppear(){
                     rotateAnimation()
                 }
+            HStack {
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint1)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint2)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint3)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+            }
+            .position(CGPoint(x: 220, y: 100))
+            
         }
         .navigationBarBackButtonHidden(true)
     }

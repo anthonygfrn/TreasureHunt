@@ -31,6 +31,11 @@ struct CavePage: View {
     @State private var successSound: AVAudioPlayer?
     @State private var soundVolume:Float = 60
     
+    @State private var hint1 = "questionMark"
+    @State private var hint2 = "questionMark"
+    @State private var hint3 = "questionMark"
+    
+    
     var body: some View {
         ZStack {
             Image("caveMapPuzzle")
@@ -42,7 +47,7 @@ struct CavePage: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)
-                .position(CGPoint(x: 900, y: 100))
+                .position(CGPoint(x: 850, y: 125))
                 .opacity(backOpacity)
                 .onTapGesture {
                     timer.upstream.connect().cancel()
@@ -133,6 +138,42 @@ struct CavePage: View {
                 .padding(.top, 795)
                 .padding(.trailing, 543)
             
+            HStack {
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint1)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint2)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint3)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+            }
+            .position(CGPoint(x: 220, y: 100))
         }
         .navigationBarBackButtonHidden(true)
     }
@@ -158,6 +199,7 @@ struct CavePage: View {
 //                    }
                     backOpacity = 1
                     freezingImage = "freezingHappy"
+                    hint2 = "plainSquare"
                 }
             }
         }
