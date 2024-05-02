@@ -60,7 +60,7 @@ struct MapPage: View {
                         .offset(x: 240, y: 70)
                 )
                 
-                // button cave
+                // button shell
                 
                 Button(action: {
                     self.isAnimating = true
@@ -160,6 +160,43 @@ struct MapPage: View {
                 .scaledToFit()
                 .position(x: posX, y:posY)
                 .animation(.easeInOut(duration: 1), value: isAnimating)
+            
+            HStack {
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint1)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint2)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint3)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+            }
+            .position(CGPoint(x: 220, y: 80))
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
@@ -190,9 +227,9 @@ struct MapPage: View {
             UIScreen.main.brightness = 0.5
         }
         .navigationBarBackButtonHidden(true)
-        .onAppear {
-            AudioManager.shared.playBackgroundMusic()
-        }
+//        .onAppear {
+//            AudioManager.shared.playBackgroundMusic()
+//        }
     }
 }
 

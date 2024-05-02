@@ -44,8 +44,8 @@ struct CoconutTreePage: View {
                 .frame(width: 70, height: 70)
                 .position(CGPoint(x: 370, y: coconutHeight))
                 .onShake {
-//                    loadSounds()
-//                    playSound(fallingSound, volume: 30)
+                    loadSounds()
+                    playSound(fallingSound, volume: 100)
                     withAnimation(.linear(duration: 1)){
                         coconutHeight = 930
                         shakeOpacity = 0
@@ -55,6 +55,7 @@ struct CoconutTreePage: View {
                         placeholderImage = "resultCoconut"
                         rotateAnimation()
                         backOpacity = 1
+                        playSound(successSound , volume: 100)
                     }
                 }
             
@@ -114,7 +115,7 @@ struct CoconutTreePage: View {
     
     func loadSounds() {
         // Load sound files
-        fallingSound = loadSound(named: "coconutDropEffect")
+        fallingSound = loadSound(named: "dropSound")
         successSound = loadSound(named: "sparkleEffect")
     }
 

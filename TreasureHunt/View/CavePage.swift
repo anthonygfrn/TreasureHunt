@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct CavePage: View {
     @Environment(\.dismiss) private var dismiss
@@ -20,9 +21,15 @@ struct CavePage: View {
     @State private var glowWidth3 = 0.0
     @State private var posX = 840
     @State private var posY = 1000
-    @State private var fireSize = 230.0
-    @State private var firePosY = 1000.0
+    @State private var fireSize = 150.0
+    @State private var firePosY = 1050.0
     @State private var freezingImage = "freezingSad"
+    @State private var cnt = 0
+    
+    @State private var fireCracklingSound: AVAudioPlayer?
+    @State private var fireWhoosh: AVAudioPlayer?
+    @State private var successSound: AVAudioPlayer?
+    @State private var soundVolume:Float = 60
     
     var body: some View {
         ZStack {
@@ -115,6 +122,8 @@ struct CavePage: View {
                 .rotationEffect(.degrees(Double(rotation)), anchor: UnitPoint(x: 0.1, y: 0.3))
                 .onAppear(){
                     rotateAnimation()
+                    loadSounds()
+                    playSound(fireCracklingSound, volume: soundVolume, loop: true)
                 }
                 .opacity(questionMarkOpacity)
             
@@ -138,9 +147,16 @@ struct CavePage: View {
                 brightnessIlumination = 1
                 fireSize = 280
                 firePosY = 970
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+                if (cnt == 0){
+                    playSound(fireWhoosh, volume: 80)
+                    cnt += 1
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+//                    if cnt == 0{
+//                        fireWhoosh?.stop()
+//                        cnt+=1
+//                    }
                     backOpacity = 1
-                    
                     freezingImage = "freezingHappy"
                 }
             }
@@ -164,6 +180,38 @@ struct CavePage: View {
             glowWidth += 20
             glowWidth2 += 9
         }
+    }
+    
+    func loadSounds() {
+        // Load sound files
+        fireCracklingSound = loadSound(named: "fireCrackling")
+        fireWhoosh = loadSound(named: "fireWhoosh")
+        successSound = loadSound(named: "sparkleEffect")
+    }
+
+    func loadSound(named name: String) -> AVAudioPlayer? {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
+            return nil
+        }
+        do {
+            return try AVAudioPlayer(contentsOf: url)
+        } catch {
+            print("Error loading sound \(name): \(error)")
+            return nil
+        }
+    }
+    
+    func playSound(_ sound: AVAudioPlayer?, volume: Float? = nil, loop: Bool = false) {
+        guard let sound = sound else {
+            return
+        }
+        sound.stop()
+        sound.currentTime = 0
+        sound.numberOfLoops = loop ? -1 : 0
+        if let volume = volume {
+            sound.volume = volume
+        }
+        sound.play()
     }
 }
 

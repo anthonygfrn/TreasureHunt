@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct FinalIslandPage: View {
     @Environment(\.dismiss) private var dismiss
@@ -19,12 +20,17 @@ struct FinalIslandPage: View {
     @State private var hint2 = "plainSquare"
     @State private var hint3 = "plainCircle"
     
+    @State private var tapSound: AVAudioPlayer?
+    
     var body: some View {
         ZStack {
             Image("finalMapPage")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea(.all)
+                .onAppear(){
+                    loadSounds()
+                }
             
             HStack {
                 ZStack {
@@ -69,6 +75,7 @@ struct FinalIslandPage: View {
                 .frame(width: 100)
                 .position(CGPoint(x: 370, y: 570))
                 .onTapGesture {
+                    playSound(tapSound, volume: 80)
                     if answerImage1 == "X"{
                         answerImage1 = "star"
                     } else if answerImage1 == "star"{
@@ -90,6 +97,7 @@ struct FinalIslandPage: View {
                 .frame(width: 100)
                 .position(CGPoint(x: 510, y: 570))
                 .onTapGesture {
+                    playSound(tapSound, volume: 80)
                     if answerImage2 == "X"{
                         answerImage2 = "star"
                     } else if answerImage2 == "star"{
@@ -111,6 +119,7 @@ struct FinalIslandPage: View {
                 .frame(width: 100)
                 .position(CGPoint(x: 650, y: 570))
                 .onTapGesture {
+                    playSound(tapSound, volume: 80)
                     if answerImage3 == "X"{
                         answerImage3 = "star"
                     } else if answerImage3 == "star"{
@@ -132,6 +141,7 @@ struct FinalIslandPage: View {
                 .frame(width: 100)
                 .position(CGPoint(x: 370, y: 780))
                 .onTapGesture {
+                    playSound(tapSound, volume: 80)
                     if answerImage1 == "X"{
                         answerImage1 = "circle"
                     } else if answerImage1 == "star"{
@@ -153,6 +163,7 @@ struct FinalIslandPage: View {
                 .frame(width: 100)
                 .position(CGPoint(x: 510, y: 780))
                 .onTapGesture {
+                    playSound(tapSound, volume: 80)
                     if answerImage2 == "X"{
                         answerImage2 = "circle"
                     } else if answerImage2 == "star"{
@@ -175,6 +186,7 @@ struct FinalIslandPage: View {
                 .frame(width: 100)
                 .position(CGPoint(x: 650, y: 780))
                 .onTapGesture {
+                    playSound(tapSound, volume: 80)
                     if answerImage3 == "X"{
                         answerImage3 = "circle"
                     } else if answerImage3 == "star"{
@@ -224,7 +236,7 @@ struct FinalIslandPage: View {
         if answerImage1 == "triangle" &&
             answerImage2 == "square" &&
             answerImage3 == "circle"{
-            var random = Int.random(in: 1...1)
+            let random = Int.random(in: 1...2)
             if random == 1 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     navigateToDiamond.toggle()
@@ -235,6 +247,35 @@ struct FinalIslandPage: View {
                 }
             }
         }
+    }
+    
+    func loadSounds() {
+        tapSound = loadSound(named: "tapSound")
+    }
+
+    func loadSound(named name: String) -> AVAudioPlayer? {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
+            return nil
+        }
+        do {
+            return try AVAudioPlayer(contentsOf: url)
+        } catch {
+            print("Error loading sound \(name): \(error)")
+            return nil
+        }
+    }
+    
+    func playSound(_ sound: AVAudioPlayer?, volume: Float? = nil, loop: Bool = false) {
+        guard let sound = sound else {
+            return
+        }
+        sound.stop()
+        sound.currentTime = 0
+        sound.numberOfLoops = loop ? -1 : 0
+        if let volume = volume {
+            sound.volume = volume
+        }
+        sound.play()
     }
 }
 

@@ -87,7 +87,7 @@ struct MagicShellPage: View {
             // Start a timer to periodically check volume
             timer = Timer.scheduledTimer(withTimeInterval: volumeCheckInterval, repeats: true) { _ in
                 let volume = getCurrentVolume()
-                if volume >= 0.75 {
+                if volume >= 0.70 {
                     // Change object image
                     self.objectImage = "o"
                     // Stop buzzer sound
@@ -96,7 +96,7 @@ struct MagicShellPage: View {
                     self.playHintSound()
                     backOpacity = 1
                 } else {
-                    self.playSound(self.buzzerSound, volume: 60.0)
+                    self.playSound(self.buzzerSound, volume: 80.0)
                 }
             }
         }

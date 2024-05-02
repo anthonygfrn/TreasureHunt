@@ -30,7 +30,11 @@
 		BE217EC02BE0897800AFA4D8 /* HappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EAD2BE0897800AFA4D8 /* HappyFaceView.swift */; };
 		BE217EC12BE0897800AFA4D8 /* UnhappyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE217EAE2BE0897800AFA4D8 /* UnhappyFaceView.swift */; };
 		BE217EC32BE0897800AFA4D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE217EB12BE0897800AFA4D8 /* Preview Assets.xcassets */; };
-		BEF5913D2BE09F2A0007B974 /* coconutDropEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF5913A2BE09F2A0007B974 /* coconutDropEffect.mp3 */; };
+		BE2C0B3A2BE32D6400FC63A5 /* dropSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE2C0B392BE32D6400FC63A5 /* dropSound.mp3 */; };
+		BE2C0B3D2BE331F400FC63A5 /* fireCrackling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE2C0B3B2BE331F400FC63A5 /* fireCrackling.mp3 */; };
+		BE2C0B3E2BE331F400FC63A5 /* fireWhoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE2C0B3C2BE331F400FC63A5 /* fireWhoosh.mp3 */; };
+		BE2C0B412BE33C0700FC63A5 /* failSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE2C0B3F2BE33C0700FC63A5 /* failSound.mp3 */; };
+		BE2C0B422BE33C0700FC63A5 /* tapSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE2C0B402BE33C0700FC63A5 /* tapSound.mp3 */; };
 		BEF5913E2BE09F2A0007B974 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF5913B2BE09F2A0007B974 /* success.mp3 */; };
 		BEF5913F2BE09F2A0007B974 /* sparkleEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BEF5913C2BE09F2A0007B974 /* sparkleEffect.mp3 */; };
 /* End PBXBuildFile section */
@@ -79,7 +83,11 @@
 		BE217EAD2BE0897800AFA4D8 /* HappyFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyFaceView.swift; sourceTree = "<group>"; };
 		BE217EAE2BE0897800AFA4D8 /* UnhappyFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnhappyFaceView.swift; sourceTree = "<group>"; };
 		BE217EB12BE0897800AFA4D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BEF5913A2BE09F2A0007B974 /* coconutDropEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coconutDropEffect.mp3; sourceTree = "<group>"; };
+		BE2C0B392BE32D6400FC63A5 /* dropSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dropSound.mp3; sourceTree = "<group>"; };
+		BE2C0B3B2BE331F400FC63A5 /* fireCrackling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fireCrackling.mp3; sourceTree = "<group>"; };
+		BE2C0B3C2BE331F400FC63A5 /* fireWhoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fireWhoosh.mp3; sourceTree = "<group>"; };
+		BE2C0B3F2BE33C0700FC63A5 /* failSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failSound.mp3; sourceTree = "<group>"; };
+		BE2C0B402BE33C0700FC63A5 /* tapSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapSound.mp3; sourceTree = "<group>"; };
 		BEF5913B2BE09F2A0007B974 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
 		BEF5913C2BE09F2A0007B974 /* sparkleEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sparkleEffect.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,9 +140,13 @@
 		A2FCAF212BD8D3F500D755DC /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
-				BEF5913A2BE09F2A0007B974 /* coconutDropEffect.mp3 */,
+				BE2C0B3B2BE331F400FC63A5 /* fireCrackling.mp3 */,
+				BE2C0B3C2BE331F400FC63A5 /* fireWhoosh.mp3 */,
+				BE2C0B392BE32D6400FC63A5 /* dropSound.mp3 */,
 				BEF5913C2BE09F2A0007B974 /* sparkleEffect.mp3 */,
 				BEF5913B2BE09F2A0007B974 /* success.mp3 */,
+				BE2C0B3F2BE33C0700FC63A5 /* failSound.mp3 */,
+				BE2C0B402BE33C0700FC63A5 /* tapSound.mp3 */,
 				BE217EAC2BE0897800AFA4D8 /* backgroundMusic.mp3 */,
 				BE217EAB2BE0897800AFA4D8 /* circle.mp3 */,
 				A25F1F3B2BDFC1BA0062D26B /* bzz.mp3 */,
@@ -312,12 +324,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF5913D2BE09F2A0007B974 /* coconutDropEffect.mp3 in Resources */,
 				BEF5913E2BE09F2A0007B974 /* success.mp3 in Resources */,
+				BE2C0B3A2BE32D6400FC63A5 /* dropSound.mp3 in Resources */,
+				BE2C0B412BE33C0700FC63A5 /* failSound.mp3 in Resources */,
+				BE2C0B3E2BE331F400FC63A5 /* fireWhoosh.mp3 in Resources */,
 				A25F1F3C2BDFC1BA0062D26B /* bzz.mp3 in Resources */,
 				A2FCAF2A2BD8D3F700D755DC /* Preview Assets.xcassets in Resources */,
+				BE2C0B422BE33C0700FC63A5 /* tapSound.mp3 in Resources */,
 				BE217EC32BE0897800AFA4D8 /* Preview Assets.xcassets in Resources */,
 				BE217EBF2BE0897800AFA4D8 /* backgroundMusic.mp3 in Resources */,
+				BE2C0B3D2BE331F400FC63A5 /* fireCrackling.mp3 in Resources */,
 				BEF5913F2BE09F2A0007B974 /* sparkleEffect.mp3 in Resources */,
 				A25F1F442BE051350062D26B /* bzz2.mp3 in Resources */,
 				BE217EBE2BE0897800AFA4D8 /* circle.mp3 in Resources */,

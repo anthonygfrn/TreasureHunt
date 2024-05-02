@@ -28,6 +28,7 @@ class AudioManager {
      if let url = Bundle.main.url(forResource: "backgroundMusic", withExtension: "mp3") {
          do {
              audioPlayer = try AVAudioPlayer(contentsOf: url)
+             audioPlayer?.volume = 85
              audioPlayer?.numberOfLoops = -1 // Set to loop indefinitely
              audioPlayer?.play()
          } catch {
