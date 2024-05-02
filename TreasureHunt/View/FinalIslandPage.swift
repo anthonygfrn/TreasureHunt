@@ -22,6 +22,9 @@ struct FinalIslandPage: View {
     
     @State private var tapSound: AVAudioPlayer?
     
+    
+    @State private var random = 0
+    
     var body: some View {
         ZStack {
             Image("finalMapPage")
@@ -236,7 +239,7 @@ struct FinalIslandPage: View {
         if answerImage1 == "triangle" &&
             answerImage2 == "square" &&
             answerImage3 == "circle"{
-            let random = Int.random(in: 1...2)
+            random = Int.random(in: 1...2)
             if random == 1 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     navigateToDiamond.toggle()
