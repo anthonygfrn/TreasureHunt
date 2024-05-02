@@ -145,7 +145,7 @@ struct CavePage: View {
                         .scaledToFit()
                         .frame(width: 130)
                     
-                    Image(hint1)
+                    Image("plainTriangle")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 60)

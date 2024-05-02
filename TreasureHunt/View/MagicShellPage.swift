@@ -64,7 +64,7 @@ struct MagicShellPage: View {
                         .scaledToFit()
                         .frame(width: 130)
                     
-                    Image(hint1)
+                    Image("plainTriangle")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 60)
@@ -75,7 +75,7 @@ struct MagicShellPage: View {
                         .scaledToFit()
                         .frame(width: 130)
                     
-                    Image(hint2)
+                    Image("plainSquare")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 60)
