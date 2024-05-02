@@ -17,9 +17,14 @@ struct MagicShellPage: View {
     @State private var backOpacity = 0.0
     @State private var timer: Timer?
     @State private var widthText = 500.0
+    
+    @State private var hint1 = "questionMark"
+    @State private var hint2 = "questionMark"
+    @State private var hint3 = "questionMark"
 
-    let volumeCheckInterval = 0.5 // Adjust as needed
-    let hintSoundMaxCount = 2 // Maximum number of times to play the hint sound
+    let volumeCheckInterval = 0.5
+    let hintSoundMaxCount = 2
+    
 
     var body: some View {
         ZStack {
@@ -32,7 +37,7 @@ struct MagicShellPage: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)
-                .position(CGPoint(x: 900, y: 100))
+                .position(CGPoint(x: 850, y: 125))
                 .opacity(backOpacity)
                 .onTapGesture {
                     stopAllAudio() // Stop all audio when backButton is tapped
@@ -52,6 +57,42 @@ struct MagicShellPage: View {
                         startVolumeCheck()
                     }
             }
+            HStack {
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint1)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint2)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+                ZStack {
+                    Image("hintBox")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130)
+                    
+                    Image(hint3)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                }
+            }
+            .position(CGPoint(x: 220, y: 100))
         }
         .onDisappear {
             stopAllAudio() // Stop all audio when view disappears
@@ -90,6 +131,7 @@ struct MagicShellPage: View {
                 if volume >= 0.70 {
                     // Change object image
                     self.objectImage = "o"
+                    hint3 = "plainCircle"
                     // Stop buzzer sound
                     self.stopSound(self.buzzerSound)
                     // Play hint sound
