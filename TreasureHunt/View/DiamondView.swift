@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct DiamondView: View {
     
     @State private var navigateToLandingPage = false
+    @State private var celebrationSound: AVAudioPlayer?
     
     var body: some View {
         NavigationStack {
@@ -20,6 +22,10 @@ struct DiamondView: View {
                     .padding(.bottom, 398)
                     .padding(.top, -333)
                     .padding(.leading, 700)
+                    .onAppear(){
+                        loadSounds()
+                        playSound(celebrationSound, volume: 80)
+                    }
                 
                 Ellipse()
                     .frame(width: 1461.01489, height: 608)
@@ -112,6 +118,34 @@ struct DiamondView: View {
             
         }
         
+    }
+    func loadSounds() {
+        celebrationSound = loadSound(named: "sparkleEffect")
+    }
+
+    func loadSound(named name: String) -> AVAudioPlayer? {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
+            return nil
+        }
+        do {
+            return try AVAudioPlayer(contentsOf: url)
+        } catch {
+            print("Error loading sound \(name): \(error)")
+            return nil
+        }
+    }
+    
+    func playSound(_ sound: AVAudioPlayer?, volume: Float? = nil, loop: Bool = false) {
+        guard let sound = sound else {
+            return
+        }
+        sound.stop()
+        sound.currentTime = 0
+        sound.numberOfLoops = loop ? -1 : 0
+        if let volume = volume {
+            sound.volume = volume
+        }
+        sound.play()
     }
 
 }
